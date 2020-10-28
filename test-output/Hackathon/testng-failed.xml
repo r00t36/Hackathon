@@ -4,16 +4,39 @@
   <listeners>
     <listener class-name="tests.ExtentReport"/>
   </listeners>
-  <test thread-count="5" name="IdentifyCourses(failed)">
+  <test thread-count="5" name="SmokeTesting(failed)">
+    <groups>
+      <run>
+        <include name="Smoke_Testing"/>
+      </run>
+    </groups>
     <classes>
       <class name="tests.TS_FormFillupValid">
         <methods>
           <include name="TC_initiateCourse"/>
-          <include name="openWebsite"/>
           <include name="TC_validData"/>
-          <include name="exitBrowser"/>
         </methods>
       </class> <!-- tests.TS_FormFillupValid -->
+      <class name="tests.TS_CourseSearch">
+        <methods>
+          <include name="TC_FilterLevel"/>
+          <include name="TC_CourseDuration"/>
+          <include name="TC_FilterLanguage"/>
+          <include name="TC_SearchTextBox"/>
+          <include name="TC_SearchButtonClickable"/>
+          <include name="TC_CourseAvailability"/>
+          <include name="TC_initiateCourse"/>
+        </methods>
+      </class> <!-- tests.TS_CourseSearch -->
+      <class name="tests.TS_Filter">
+        <methods>
+          <include name="languagesDisplayed"/>
+          <include name="extractLanguageDetails"/>
+          <include name="levelsDisplayed"/>
+          <include name="TC_initiateClasses"/>
+          <include name="extractLevelsDetails"/>
+        </methods>
+      </class> <!-- tests.TS_Filter -->
     </classes>
-  </test> <!-- IdentifyCourses(failed) -->
+  </test> <!-- SmokeTesting(failed) -->
 </suite> <!-- Failed suite [Hackathon] -->

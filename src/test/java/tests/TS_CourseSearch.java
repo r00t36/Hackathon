@@ -2,7 +2,6 @@ package tests;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import functionalities.courseDetailsFunctionality;
 
 public class TS_CourseSearch	extends BaseClass {
@@ -23,7 +22,7 @@ public class TS_CourseSearch	extends BaseClass {
 	public void TC_SearchButtonClickable() {
 		details.searchClick();
 	}
-	
+
 	@Test(priority=3)
 	public void TC_FilterLanguage() {
 		details.filterLanguage("English");
