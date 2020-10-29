@@ -111,6 +111,6 @@ public class FormFillingFunctionality extends BaseUi {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		snap("Data "+row+" Status");
+		//snap("Data "+row+" Status");
 	}
 }
