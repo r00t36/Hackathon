@@ -19,7 +19,7 @@ public class TS_Filter extends BaseClass{
 		details = new CourseDetailsFunctionality();
 	}
 	@Test(priority=1)
-	public void languagesDisplayed()
+	public void TC_LanguagesDisplayed()
 	{
 		
 		details.search("Language Learning");
@@ -27,17 +27,17 @@ public class TS_Filter extends BaseClass{
 		filter.setLanguage();
 	}
 	@Test(priority=2)
-	public void extractLanguageDetails()
+	public void TC_ExtractLanguageDetails()
 	{
 		filter.extractLanguageDetails();
 	}
 	@Test(priority=3)
-	public void levelsDisplayed()
+	public void TC_LevelsDisplayed()
 	{
 		filter.setLevels();
 	}
 	@Test(priority=4)
-	public void extractLevelsDetails()
+	public void TC_ExtractLevelsDetails()
 	{
 		filter.extractLevelDetails();
 	}
