@@ -13,7 +13,7 @@ public class BaseClass extends BaseUi{
 	@BeforeSuite
 	public void openWebsite()
 	{
-		driver = getDriver("firefox");
+		driver = getDriver("chrome");
 		openUrl();	
 	}
 	
