@@ -2,15 +2,15 @@ package tests;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import functionalities.courseDetailsFunctionality;
+import functionalities.CourseDetailsFunctionality;
 
 public class TS_CourseSearch	extends BaseClass {
 	
-	public courseDetailsFunctionality details;
+	public CourseDetailsFunctionality details;
 	
 	@BeforeTest
 	public void TC_initiateCourse() {
-		details = new courseDetailsFunctionality();
+		details = new CourseDetailsFunctionality();
 	}
 	
 	@Test(priority=1)

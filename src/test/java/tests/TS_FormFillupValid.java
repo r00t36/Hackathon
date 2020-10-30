@@ -17,7 +17,9 @@ public class TS_FormFillupValid extends BaseClass {
 	public void TC_validData() {
 		fill.getCourse();
 		fill.navigateForm();
+		System.out.println("Valid Form Fill-up Started");
 		fill.setFormValues(1);
+		System.out.println("Valid Form Fill-up completed");
 	}
 	
 }

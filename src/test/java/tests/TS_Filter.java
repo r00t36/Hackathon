@@ -4,19 +4,19 @@ import org.testng.annotations.Test;
 //import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.*;
 
-import functionalities.courseDetailsFunctionality;
-import functionalities.filterFunctionality;
+import functionalities.CourseDetailsFunctionality;
+import functionalities.FilterFunctionality;
 
 public class TS_Filter extends BaseClass{
 	
-	public filterFunctionality filter;
-	public courseDetailsFunctionality details;
+	public FilterFunctionality filter;
+	public CourseDetailsFunctionality details;
 
 	@BeforeTest
 	public void TC_initiateClasses()
 	{
-		filter = new filterFunctionality();
-		details = new courseDetailsFunctionality();
+		filter = new FilterFunctionality();
+		details = new CourseDetailsFunctionality();
 	}
 	@Test(priority=1)
 	public void languagesDisplayed()
