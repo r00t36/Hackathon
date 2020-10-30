@@ -55,7 +55,12 @@ public class BaseUi {
 		// If browser entered is chrome, open chrome browser
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver");
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--no-sandbox");
+			options.addArguments("--headless"); //should be enabled for Jenkins
+			options.addArguments("--disable-dev-shm-usage"); //should be enabled for Jenkins
+			options.addArguments("--window-size=1920x1080"); //should be enabled for Jenkins
+			driver = new ChromeDriver(options);
 		}
 
 		// If browser entered is firefox, open firefox browser
