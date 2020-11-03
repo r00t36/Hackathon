@@ -21,7 +21,7 @@ public class TS_Filter extends BaseClass{
 	@Test(priority=1)
 	public void TC_LanguagesDisplayed()
 	{
-		
+		openUrl();
 		details.search("Language Learning");
 		details.searchClick();
 		filter.setLanguage();
