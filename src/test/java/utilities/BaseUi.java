@@ -72,7 +72,7 @@ public class BaseUi {
 
 		// If browser entered is firefox, open firefox browser
 		else if (browser.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/drivers/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/drivers/geckodriver");
 			//FirefoxOptions options = new FirefoxOptions();
 			//options.addArguments("-headless");
 			FirefoxBinary firefoxBinary = new FirefoxBinary();
