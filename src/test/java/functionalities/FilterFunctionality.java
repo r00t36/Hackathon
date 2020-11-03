@@ -12,7 +12,7 @@ public class FilterFunctionality extends BaseUi {
     // Method to apply filters (Language and Level filters)
     public void setLanguage() {
         // Wait till element gets click-able
-        waitElementClickable(config.getProperty("languageDrop"));
+       // waitElementClickable(config.getProperty("languageDrop"));
 
         // Find and Click Drop Down language filter
         driver.findElement(By.xpath(config.getProperty("languageDrop"))).click();
@@ -67,7 +67,7 @@ public class FilterFunctionality extends BaseUi {
 
     public void setLevels() {
 
-        waitElementClickable(config.getProperty("show"));
+      //  waitElementClickable(config.getProperty("show"));
 
         driver.findElement(By.xpath(config.getProperty("show"))).click();
         Boolean present = false;
