@@ -76,7 +76,7 @@ public class BaseUi {
 			//FirefoxOptions options = new FirefoxOptions();
 			//options.addArguments("-headless");
 			FirefoxBinary firefoxBinary = new FirefoxBinary();
-			//firefoxBinary.addCommandLineOptions("--headless");
+			firefoxBinary.addCommandLineOptions("--headless");
 		    FirefoxProfile profile=new FirefoxProfile();
 		  
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
