@@ -78,7 +78,7 @@ public class BaseUi {
 			FirefoxBinary firefoxBinary = new FirefoxBinary();
 			 System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
 			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
-			//firefoxBinary.addCommandLineOptions("--headless");
+			firefoxBinary.addCommandLineOptions("--headless");
 		    FirefoxProfile profile=new FirefoxProfile();
 		  
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
