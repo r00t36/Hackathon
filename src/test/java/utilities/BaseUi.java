@@ -75,17 +75,19 @@ public class BaseUi {
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/drivers/geckodriver");
 			//FirefoxOptions options = new FirefoxOptions();
 			//options.addArguments("-headless");
-			/*FirefoxBinary firefoxBinary = new FirefoxBinary();
-			firefoxBinary.addCommandLineOptions("--headless");
+			FirefoxBinary firefoxBinary = new FirefoxBinary();
+			 System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
+			//firefoxBinary.addCommandLineOptions("--headless");
 		    FirefoxProfile profile=new FirefoxProfile();
 		  
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
 			firefoxOptions.setBinary(firefoxBinary);		
 			firefoxOptions.setProfile(profile);
-	 	    driver=new FirefoxDriver(firefoxOptions);*/
+	 	    driver=new FirefoxDriver(firefoxOptions);
 			
 			
-			FirefoxBinary firefoxBinary = new FirefoxBinary();
+			/*FirefoxBinary firefoxBinary = new FirefoxBinary();
 			//firefoxBinary.addCommandLineOptions("--headless");
 		    FirefoxProfile profile=new FirefoxProfile();
 		    System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
@@ -93,7 +95,7 @@ public class BaseUi {
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
 			firefoxOptions.setBinary(firefoxBinary);		
 			firefoxOptions.setProfile(profile);
-	 	    driver=new FirefoxDriver(firefoxOptions);
+	 	    driver=new FirefoxDriver(firefoxOptions);*/
 
 			//driver = new FirefoxDriver(options);
 		} else if (browser.equalsIgnoreCase("opera")) {
